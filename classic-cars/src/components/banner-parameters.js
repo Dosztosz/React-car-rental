@@ -1,4 +1,4 @@
-import twingo from "../img/twingo.webp";
+import twingoInterior from "../img/twingo-interior.jpg";
 
 function BannerParameters() {
   return (
@@ -17,8 +17,7 @@ function BannerParameters() {
         </div>
       </div>
       <div className="parameter-photos">
-        <img src={twingo} />
-        <img src={twingo} />
+        <img src={twingoInterior} />
       </div>
     </div>
   );

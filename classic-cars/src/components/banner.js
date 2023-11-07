@@ -2,7 +2,7 @@ import twingo from "../img/twingo.webp";
 
 function Banner() {
   return (
-    <div className="banner">
+    <div className="banner padding-50">
       <div className="banner-description">
         <h1>Rent your dream Car</h1>
         <p className="enlarge">Make your roof go unfold</p>
