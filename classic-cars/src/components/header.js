@@ -14,10 +14,10 @@ function Header() {
   ));
 
   return (
-    <div class="header">
+    <div className="header">
       <img src={logo} alt="logo" width="100px" />
       <nav>
-        <ul class="flex-list">{listItems}</ul>
+        <ul className="flex-list">{listItems}</ul>
       </nav>
     </div>
   );

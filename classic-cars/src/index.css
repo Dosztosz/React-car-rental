@@ -38,3 +38,68 @@ nav {
   justify-content: space-between;
   gap: 30px;
 }
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+}
+
+.banner-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.banner-photo img {
+  max-width: 40vw;
+}
+
+.banner-description button {
+  border-radius: 50px;
+  padding: 20px;
+  max-width: 150px;
+  background-color: transparent;
+}
+
+.banner-description button::after {
+  content: " ->";
+}
+
+.banner-parameter-info {
+  display: block;
+}
+
+.banner-parameter-info .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-parameter-info .container .parameter {
+  display: block;
+}
+
+.parameter-photos {
+  display: flex;
+}
+
+.parameter-photos img {
+  max-width: 24vw;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.enlarge {
+  font-size: 24px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.bold {
+  font-weight: bolder;
+}
