@@ -124,7 +124,7 @@ p {
 }
 
 .car-info {
-  border: 1px solid rgb(102, 102, 102);
+  border: 2px solid #e2eefb;
   width: 20vw;
 }
 
@@ -137,9 +137,15 @@ p {
 }
 
 .search-container {
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .filter-container {
   text-align: center;
+}
+
+.car-info button {
+  background-color: #e2eefb;
+  border: none;
+  padding: 20px;
 }

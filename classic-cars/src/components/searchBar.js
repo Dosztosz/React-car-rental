@@ -34,15 +34,20 @@ function searchBar() {
       carImgUrl: trevisPhoto,
     },
   ];
-
   const listCars = cars.map((c) => (
     <div className="car-info">
       <img src={c.carImgUrl} />
       <div className="car-description">
-        <p className="bolder enlarge">Name: {c.carName}</p>
-        <p>Power: {c.carHp}</p>
-        <p>Price per day: {c.carPrice}</p>
-        <button id={c.id}>Rent</button>
+        <p className="bolder enlarge">{c.carName}</p>
+        <p>
+          Power: <b>{c.carHp} HP</b>
+        </p>
+        <p>
+          Price per day: <b>{c.carPrice}</b> zł Netto
+        </p>
+        <button type="button" id={c.id}>
+          Rent
+        </button>
       </div>
     </div>
   ));
