@@ -55,8 +55,22 @@ function searchBar() {
   return (
     <div className="search-container">
       <div className="filter-container">
-        <h1>Choose you dream Car</h1>
-        <div className="filters"></div>
+        <h1>Search your best cars here</h1>
+        <div className="filters">
+          <form>
+            <input type="text" placeholder="From Address"></input>
+            <input type="text" placeholder="To Address"></input>
+            <input type="date" placeholder="From Address"></input>
+            <input type="date" placeholder="From Address"></input>
+            <select name="cars" id="cars" form="carform">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+            <button></button>
+          </form>
+        </div>
       </div>
       <div className="car-list">{listCars}</div>
     </div>
