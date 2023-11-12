@@ -9,7 +9,7 @@ function Banner() {
         <button>Check it out!</button>
       </div>
       <div className="banner-photo">
-        <img src={twingo} />
+        <img alt="twingo" src={twingo} />
       </div>
     </div>
   );

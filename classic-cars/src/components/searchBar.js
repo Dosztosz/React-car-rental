@@ -1,7 +1,9 @@
+import React from "react";
 import twingoPhoto from "../img/cars/twingo.jpg";
 import micraPhoto from "../img/cars/micra.webp";
 import yarisPhoto from "../img/cars/yaris.webp";
 import trevisPhoto from "../img/cars/trevis.jpg";
+import Popup from "./popup";
 
 function searchBar() {
   const cars = [
@@ -36,7 +38,7 @@ function searchBar() {
   ];
   const listCars = cars.map((c) => (
     <div className="car-info">
-      <img src={c.carImgUrl} />
+      <img alt={c.carName} src={c.carImgUrl} />
       <div className="car-description">
         <p className="bolder enlarge">{c.carName}</p>
         <p>
@@ -45,9 +47,7 @@ function searchBar() {
         <p>
           Price per day: <b>{c.carPrice}</b> zł Netto
         </p>
-        <button type="button" id={c.id}>
-          Rent
-        </button>
+        <Popup name={c.carName} img={c.carImgUrl} />
       </div>
     </div>
   ));
@@ -58,8 +58,7 @@ function searchBar() {
         <h1>Search your best cars here</h1>
         <div className="filters">
           <form>
-            <input type="text" placeholder="From Address"></input>
-            <input type="text" placeholder="To Address"></input>
+            <input type="text" placeholder="City"></input>
             <input type="date" placeholder="From Address"></input>
             <input type="date" placeholder="From Address"></input>
             <select name="cars" id="cars" form="carform">
@@ -68,7 +67,7 @@ function searchBar() {
               <option value="opel">Opel</option>
               <option value="audi">Audi</option>
             </select>
-            <button></button>
+            <button className="button rent">Search</button>
           </form>
         </div>
       </div>

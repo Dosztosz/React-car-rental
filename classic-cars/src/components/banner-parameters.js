@@ -17,7 +17,7 @@ function BannerParameters() {
         </div>
       </div>
       <div className="parameter-photos">
-        <img src={twingoInterior} />
+        <img alt="Twingo Image" src={twingoInterior} />
       </div>
     </div>
   );
