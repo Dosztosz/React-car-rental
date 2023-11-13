@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/header";
 import Main from "./components/main";
 import Footer from "./components/footer";
+import Filter from "./components/filter";
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <Header />
       <Main />
       <Footer />
+      <Filter />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import twingoPhoto from "../img/cars/twingo.jpg";
 import micraPhoto from "../img/cars/micra.webp";
 import yarisPhoto from "../img/cars/yaris.webp";
@@ -36,6 +36,7 @@ function searchBar() {
       carImgUrl: trevisPhoto,
     },
   ];
+
   const listCars = cars.map((c) => (
     <div className="car-info">
       <img alt={c.carName} src={c.carImgUrl} />
