@@ -2,6 +2,14 @@ function footer() {
   return (
     <footer>
       <div className="footer-block">
+        <h2>Contact</h2>
+        <ul>
+          <li>Dosztosz</li>
+          <li>tomaszdebosz420@gmail.com</li>
+          <li>+48 732 067 591</li>
+        </ul>
+      </div>
+      <div className="footer-block">
         <h2>About</h2>
         <ul>
           <li>Main Page</li>
@@ -24,14 +32,6 @@ function footer() {
           <li>Nissan Micra</li>
           <li>Toyota Yaris</li>
           <li>Daihatsu Trevis</li>
-        </ul>
-      </div>
-      <div className="footer-block">
-        <h2>Contact</h2>
-        <ul>
-          <li>Dosztosz</li>
-          <li>tomaszdebosz420@gmail.com</li>
-          <li>+48 732 067 591</li>
         </ul>
       </div>
     </footer>
