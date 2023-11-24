@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/header";
+import Header from "./components/interface/header";
 import Main from "./components/main";
-import Footer from "./components/footer";
+import Footer from "./components/interface/footer";
 
 function App() {
   return (

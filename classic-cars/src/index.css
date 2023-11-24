@@ -285,3 +285,22 @@ p {
 .cancel:hover {
   background-color: #800606;
 }
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.pricing-block {
+  min-height: 40vh;
+}
+
+.pricing-title {
+  height: 5vh;
+}
+
+.pricing-list {
+  height: 15vh;
+}
+.pricing-button {
+  height: 5vh;
+}
